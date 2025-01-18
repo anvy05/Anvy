@@ -16,7 +16,7 @@
             <h2>Made by Anvy Verlice</h2>
         </header>
 
-        <!-- Main Content Section -->
+        <!-- Attaching, Refreshing, Saving a Situation -->
         <section>
             <h2>📹 Attaching, Refreshing, Saving a Situation 📹</h2>
 
@@ -35,6 +35,10 @@
                     <p class="command-line">/do It is recording, is ballistic and water proof</p>
                     <button class="copy-button" onclick="copyToClipboard('/do It is recording, is ballistic and water proof')">Copy</button>
                 </div>
+                <div class="command-wrapper">
+                    <p class="command-line">/me connects PDA to the nearest cell tower</p>
+                    <button class="copy-button" onclick="copyToClipboard('/me connects PDA to the nearest cell tower')">Copy</button>
+                </div>
             </div>
 
             <!-- Attaching Bodycam Undercover -->
@@ -52,40 +56,6 @@
                     <p class="command-line">/do It is recording, is ballistic and water proof</p>
                     <button class="copy-button" onclick="copyToClipboard('/do It is recording, is ballistic and water proof')">Copy</button>
                 </div>
-            </div>
-
-            <!-- Refreshing Bodycam -->
-            <div class="command-section">
-                <h3>Refreshing Bodycam</h3>
-                <div class="command-wrapper">
-                    <p class="command-line">/me refreshing bodycam</p>
-                    <button class="copy-button" onclick="copyToClipboard('/me refreshing bodycam')">Copy</button>
-                </div>
-                <div class="command-wrapper">
-                    <p class="command-line">/do It is recording</p>
-                    <button class="copy-button" onclick="copyToClipboard('/do It is recording')">Copy</button>
-                </div>
-            </div>
-
-            <!-- Saving a Situation -->
-            <div class="command-section">
-                <h3>Saving a Situation</h3>
-                <div class="command-wrapper">
-                    <p class="command-line">/me saves bodycam, uploads it to the FIB Cloud and continues recording</p>
-                    <button class="copy-button" onclick="copyToClipboard('/me saves bodycam, uploads it to the FIB Cloud and continues recording')">Copy</button>
-                </div>
-                <div class="command-wrapper">
-                    <p class="command-line">/do It is recording</p>
-                    <button class="copy-button" onclick="copyToClipboard('/do It is recording')">Copy</button>
-                </div>
-            </div>
-        </section>
-
-        <!-- PDA Commands -->
-        <section>
-            <h2>📱 PDA Commands 📱</h2>
-            <div class="command-section">
-                <h3>Connect PDA</h3>
                 <div class="command-wrapper">
                     <p class="command-line">/me connects PDA to the nearest cell tower</p>
                     <button class="copy-button" onclick="copyToClipboard('/me connects PDA to the nearest cell tower')">Copy</button>
@@ -96,6 +66,8 @@
         <!-- Drone Commands -->
         <section>
             <h2>🚁 Drone Commands 🚁</h2>
+
+            <!-- While on Duty -->
             <div class="command-section">
                 <h3>While on Duty</h3>
                 <div class="command-wrapper">
@@ -103,8 +75,11 @@
                     <button class="copy-button" onclick="copyToClipboard('/me launches FIB drone')">Copy</button>
                 </div>
             </div>
+
+            <!-- While Undercover -->
             <div class="command-section">
-                <h3>While Undercover</h3>
+                <h3>While Undercover and Taking Drone from FIB Car</h3>
+                <p>You need to take a drone from the FIB car (or lockers) and put it in your backpack. You cannot launch two drones in a row unless you picked it up off the ground. If you didn’t, you need to take another drone.</p>
                 <div class="command-wrapper">
                     <p class="command-line">/me takes the FIB drone from the trunk and puts it in the backpack</p>
                     <button class="copy-button" onclick="copyToClipboard('/me takes the FIB drone from the trunk and puts it in the backpack')">Copy</button>
@@ -120,21 +95,53 @@
             </div>
         </section>
 
-        <!-- Checking for Vehicle Owner -->
+        <!-- Other Sections (Handing Footage, Finishing Shift, etc.) -->
         <section>
-            <h2>🚗 Checking for Vehicle Owner 🚗</h2>
+            <h2>📂 Handing Footage to the Lawyer</h2>
             <div class="command-section">
-                <h3>Learn the Owner of a Vehicle Without a License Plate</h3>
                 <div class="command-wrapper">
-                    <p class="command-line">/me feels the edges of the vehicle for VIN and checks for ownership</p>
-                    <button class="copy-button" onclick="copyToClipboard('/me feels the edges of the vehicle for VIN and checks for ownership')">Copy</button>
+                    <p class="command-line">/me saves bodycam contents onto an SD card and uploads contents to FIB servers</p>
+                    <button class="copy-button" onclick="copyToClipboard('/me saves bodycam contents onto an SD card and uploads contents to FIB servers')">Copy</button>
                 </div>
                 <div class="command-wrapper">
-                    <p class="command-line">/me looks up the VIN in the database for license plate and owner information</p>
-                    <button class="copy-button" onclick="copyToClipboard('/me looks up the VIN in the database for license plate and owner information')">Copy</button>
+                    <p class="command-line">/me Takes SD card out of the bodycam and hands it to the lawyer</p>
+                    <button class="copy-button" onclick="copyToClipboard('/me Takes SD card out of the bodycam and hands it to the lawyer')">Copy</button>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>🏢 Finishing Your Shift</h2>
+            <div class="command-section">
+                <div class="command-wrapper">
+                    <p class="command-line">/me saves bodycam contents onto an SD card and uploads contents to FIB servers</p>
+                    <button class="copy-button" onclick="copyToClipboard('/me saves bodycam contents onto an SD card and uploads contents to FIB servers')">Copy</button>
+                </div>
+                <div class="command-wrapper">
+                    <p class="command-line">/me puts the badge in the locker</p>
+                    <button class="copy-button" onclick="copyToClipboard('/me puts the badge in the locker')">Copy</button>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>🔍 Searching a Trunk</h2>
+            <div class="command-section">
+                <div class="command-wrapper">
+                    <p class="command-line">/me pulls out a crowbar from the backpack</p>
+                    <button class="copy-button" onclick="copyToClipboard('/me pulls out a crowbar from the backpack')">Copy</button>
+                </div>
+                <div class="command-wrapper">
+                    <p class="command-line">/try breaks open the trunk with a crowbar</p>
+                    <button class="copy-button" onclick="copyToClipboard('/try breaks open the trunk with a crowbar')">Copy</button>
+                </div>
+                <div class="command-wrapper">
+                    <p class="command-line">/do trunk is open</p>
+                    <button class="copy-button" onclick="copyToClipboard('/do trunk is open')">Copy</button>
                 </div>
             </div>
         </section>
     </div>
 </body>
 </html>
+
